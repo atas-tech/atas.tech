@@ -1,0 +1,437 @@
+:root {
+  --bg-color: #0A0D14;
+  --primary-amber: #E5A93D;
+  --secondary-blue: #2A5A85;
+  --terminal-green: #4AF626;
+  --text-active: #E5A93D; /* Set as primary amber for retro look */
+  --text-muted: rgba(229, 169, 61, 0.7);
+  --selection-bg: var(--primary-amber);
+  --selection-text: var(--bg-color);
+  --font-mono-vt: 'VT323', monospace;
+  --font-mono-jb: 'JetBrains Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-amber);
+  font-family: var(--font-mono-jb);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+/* CRT Scanline Effect */
+body::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+              linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 1000;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+/* Subtle CRT Flicker */
+@keyframes flicker {
+  0% { opacity: 0.98; }
+  5% { opacity: 0.95; }
+  10% { opacity: 0.9; }
+  15% { opacity: 0.95; }
+  20% { opacity: 0.98; }
+  100% { opacity: 1; }
+}
+
+.crt-flicker {
+  animation: flicker 0.1s infinite;
+}
+
+/* Typography */
+h1, h2, h3 {
+  font-family: var(--font-mono-vt);
+  text-transform: uppercase;
+  color: var(--primary-amber);
+}
+
+.amber-text-glow {
+  text-shadow: 0 0 8px rgba(229, 169, 61, 0.7);
+}
+
+.bold { font-weight: 700; }
+.italic { font-style: italic; }
+.accent-amber { color: var(--primary-amber); }
+.accent-blue { color: var(--secondary-blue); }
+.status-ok { color: var(--terminal-green); font-weight: bold; }
+
+/* Navigation */
+#navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 13, 20, 0.95);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(229, 169, 61, 0.3);
+  z-index: 100;
+  padding: 0.75rem 0;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--primary-amber);
+}
+
+.logo-img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(1.1);
+}
+
+.brand-text {
+  font-family: var(--font-mono-vt);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--primary-amber);
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  padding: 0.2rem 0.5rem;
+}
+
+.nav-links a:hover {
+  background: var(--primary-amber);
+  color: var(--bg-color);
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  min-height: 80vh;
+  justify-content: center;
+}
+
+.hero-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.hero-header {
+  margin-bottom: 2rem;
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid var(--primary-amber);
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  width: fit-content;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--primary-amber) }
+}
+
+/* Terminal Box */
+.terminal-box {
+  border: 1px solid var(--primary-amber);
+  padding: 2rem;
+  background: rgba(17, 21, 28, 0.5);
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.terminal-header-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(229, 169, 61, 0.2);
+}
+
+.terminal-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
+}
+
+.terminal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.definition {
+  font-size: 1.1rem;
+}
+
+.description-block {
+  border-left: 2px solid var(--secondary-blue);
+  padding-left: 1rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.status-list {
+  font-size: 0.8rem;
+  border-top: 1px solid rgba(229, 169, 61, 0.1);
+  padding-top: 1rem;
+}
+
+.shadow-amber-glow {
+  box-shadow: 0 0 20px rgba(229, 169, 61, 0.1);
+}
+
+.backstory-tag {
+  color: var(--secondary-blue);
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/* Projects */
+.projects {
+  background: var(--bg-color);
+  border-top: 1px solid rgba(42, 90, 133, 0.2);
+  border-bottom: 1px solid rgba(42, 90, 133, 0.2);
+}
+
+.section-container {
+  max-width: 600px;
+  width: 100%;
+}
+
+.section-header {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.project-card-outer {
+  border: 1px solid rgba(229, 169, 61, 0.4);
+  padding: 4px;
+  transition: all 0.3s ease;
+}
+
+.project-card-outer:hover {
+  border-color: var(--primary-amber);
+  transform: translateY(-2px);
+}
+
+.project-card-inner {
+  border: 1px solid rgba(42, 90, 133, 0.2);
+  padding: 1.5rem;
+  background: #11151C;
+}
+
+.project-card-inner:hover {
+  background: rgba(229, 169, 61, 0.05);
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.status-badge {
+  color: var(--terminal-green);
+  font-size: 0.6rem;
+  border: 1px solid rgba(74, 246, 38, 0.5);
+  padding: 2px 6px;
+}
+
+.project-description {
+  font-size: 0.85rem;
+  color: var(--secondary-blue);
+  margin-bottom: 1.5rem;
+}
+
+.btn-execute {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-amber);
+  border: 1px solid var(--primary-amber);
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 10px rgba(229, 169, 61, 0.1);
+}
+
+.btn-execute:hover {
+  background: var(--primary-amber);
+  color: var(--bg-color);
+  box-shadow: 0 0 15px rgba(229, 169, 61, 0.3);
+}
+
+.project-footer {
+  margin-top: 2rem;
+  font-style: italic;
+  font-size: 0.7rem;
+  opacity: 0.5;
+}
+
+/* GitHub Section */
+.github-section {
+  padding: 6rem 2rem;
+  background-color: #0d1117;
+}
+
+.circuit-bg {
+  background-image: radial-gradient(var(--secondary-blue) 0.5px, transparent 0.5px);
+  background-size: 20px 20px;
+}
+
+.text-center { text-align: center; }
+
+.github-text {
+  font-size: 0.9rem;
+  color: var(--secondary-blue);
+  max-width: 400px;
+  margin: 1rem auto 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--primary-amber);
+  color: var(--bg-color);
+  padding: 1rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 30px var(--primary-amber);
+  transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+  padding: 3rem 2rem;
+  border-top: 1px solid rgba(42, 90, 133, 0.2);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.footer-container {
+  font-size: 0.7rem;
+  font-family: monospace;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.footer-container p {
+  margin-bottom: 0.5rem;
+}
+
+.blink-cursor {
+  background: var(--primary-amber);
+  margin-left: 4px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { opacity: 1 }
+  50% { opacity: 0 }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .nav-container {
+    padding: 0 1rem;
+  }
+  
+  .brand-text {
+    font-size: 1.2rem;
+  }
+  
+  .nav-links {
+    gap: 0.5rem;
+  }
+  
+  .nav-links a {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.3rem;
+  }
+  
+  .hero-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .terminal-box {
+    padding: 1rem;
+  }
+  
+  .definition {
+    font-size: 0.9rem;
+  }
+}
