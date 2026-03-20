@@ -14,9 +14,9 @@ Originally allocated for high-end AI protocols, atas.tech serves as the hub for 
 
 ### Active Projects
 
-- **[PROJECT: KRYPTOS]**: Multi-agent orchestration and secure coordinator system.
+- **[PROJECT: BLINDPASS]**: Multi-agent orchestration and secure coordinator system.
   - [Status: ONLINE]
-  - [Access: [kryptos.atas.tech](https://kryptos.atas.tech)]
+  - [Access: [blindpass.atas.tech](https://blindpass.atas.tech)]
 
 ## Local Development
 

@@ -39,12 +39,12 @@ Input these core design tokens into your CSS or UI generator to establish the re
 
 - **Layout:** CSS Grid (1 column on mobile, 2 on desktop).
 - **Section Header:** `> ls -la /projects/active`
-- **Card UI (The "Kryptos" Spec):**
+- **Card UI (The "BlindPass" Spec):**
   - *Container:* Dark grey background (`#11151C`) with a `1px solid #2A5A85` border. On hover, the border turns Amber (`#E5A93D`) and pushes up slightly (-2px translateY).
-  - *Project Title:* `[ PROJECT: KRYPTOS ]` (Amber, bold).
+  - *Project Title:* `[ PROJECT: BLINDPASS ]` (Amber, bold).
   - *Status Badge:* `[STATUS: ONLINE]` (Green text).
   - *Description:* "Secure infrastructure and secret management protocols for autonomous AI agents. Ensuring high-grade operational security and robust deployment for agentic workflows."
-  - *Link/Button:* `> EXECUTE kryptos.atas.tech` (Hyperlinked).
+  - *Link/Button:* `> EXECUTE blindpass.atas.tech` (Hyperlinked).
 
 #### **D. GitHub Integration (The Engine Room)**
 

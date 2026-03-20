@@ -1,0 +1,22 @@
+# BlindPass: Zero-Knowledge Secrets for AI Agents
+
+BlindPass is a secure infrastructure and secret management protocol designed specifically for autonomous AI agents and modern LLM systems.
+
+## Core Value Proposition
+- **Zero-Knowledge Architecture:** Secrets are provisioned without the server or the LLM ever seeing the plaintext credentials.
+- **Secure Integration:** Enables seamless credential injection into agentic workflows.
+- **High-Grade Security:** Focuses on operational security and robust deployment for autonomous machine intelligence.
+
+## Technical Context
+- **Developed by:** Atas Tech (Boutique AI research laboratory).
+- **Primary Domain:** https://blindpass.atas.tech
+- **Corporate Site:** https://atas.tech
+
+## Key Technologies
+- High-fidelity machine intelligence.
+- Sophisticated architectural patterns for AI agency.
+- Robust secret management protocols.
+
+## Status
+- **Status:** ONLINE
+- **Market:** Cybersecurity, AI Infrastructure, DevOps for LLMs.
