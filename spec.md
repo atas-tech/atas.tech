@@ -32,7 +32,7 @@ Input these core design tokens into your CSS or UI generator to establish the re
 - **Headline:** Typewriter-effect animation typing out: `> INITIALIZING PROJECT ATAS...`
 - **Definition Block (Floating Terminal Window):**
   - *UI:* A box with a 1px amber border.
-  - *Content:* "Dictionary Lookup: **Atas** (Singlish) - High-class, sophisticated, posh. Applied to autonomous agency and secure machine intelligence."
+  - *Content:* "Dictionary Lookup: **Atas** (Singlish) - High-class, sophisticated, posh. Applied to forging autonomous protocols and sophisticated AI architectures for the next epoch."
 - **Backstory Tag:** Small, muted blue text at the bottom: `SYS_LOG: Domain registered 2018. Originally allocated for [high.tech]. Repurposed for high-end AI protocols.`
 
 #### **C. Project Showcase (The Lab)**
@@ -53,7 +53,7 @@ Input these core design tokens into your CSS or UI generator to establish the re
   - Icon: Retro pixelated GitHub Octocat.
   - Headline: `> ACCESS OPEN SOURCE REPOSITORIES`
   - Text: "Review the source code, development operations, and infrastructure components powering the Atas ecosystem."
-  - **Call to Action Button:** A solid block button (Amber background, black text) reading `CONNECT TO GITHUB -> https://github.com/orgs/atas-tech/`.
+  - **Call to Action Button:** A solid block button (Amber background, black text) reading `CONNECT TO GITHUB -> https://github.com/atas-tech/`.
 
 #### **E. Footer**
 

@@ -8,9 +8,11 @@ BlindPass is a secure infrastructure and secret management protocol designed spe
 - **High-Grade Security:** Focuses on operational security and robust deployment for autonomous machine intelligence.
 
 ## Technical Context
-- **Developed by:** Atas Tech (Boutique AI research laboratory).
+- **Developed by:** Atas Tech (Forging autonomous protocols and sophisticated AI architectures for the next epoch).
 - **Primary Domain:** https://blindpass.atas.tech
+- **GitHub:** https://github.com/atas-tech/
 - **Corporate Site:** https://atas.tech
+- **Portfolio:** https://portfolio.atas.tech/
 
 ## Key Technologies
 - High-fidelity machine intelligence.
