@@ -257,6 +257,14 @@ section {
   margin-bottom: 2rem;
 }
 
+.project-area {
+  margin-bottom: 4rem;
+}
+
+.project-area:last-of-type {
+  margin-bottom: 0;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
