@@ -1,24 +1,57 @@
-# BlindPass: Zero-Knowledge Secrets for AI Agents
+# ATAS.TECH — Boutique AI Research Lab (Singapore, est. 2018)
 
-BlindPass is a secure infrastructure and secret management protocol designed specifically for autonomous AI agents and modern LLM systems.
+atas.tech is the hub for Atas Tech's projects: zero-knowledge secret infrastructure for
+AI agents, supply-chain guardrails for agentic coding, and trust tooling plus Quickshell
+bar plugins for Omarchy Linux. Operator: Hung Vo (DevSecOps & AI Engineer).
 
-## Core Value Proposition
-- **Zero-Knowledge Architecture:** Secrets are provisioned without the server or the LLM ever seeing the plaintext credentials.
-- **Secure Integration:** Enables seamless credential injection into agentic workflows.
-- **High-Grade Security:** Focuses on operational security and robust deployment for autonomous machine intelligence.
+- Site: https://atas.tech
+- GitHub (lab): https://github.com/atas-tech
+- GitHub (OmaSafe & Omarchy plugins): https://github.com/tuthan
+- Portfolio: https://portfolio.atas.tech/
 
-## Technical Context
-- **Developed by:** Atas Tech (Forging autonomous protocols and sophisticated AI architectures for the next epoch).
-- **Primary Domain:** https://blindpass.atas.tech
-- **GitHub:** https://github.com/atas-tech/
-- **Corporate Site:** https://atas.tech
-- **Portfolio:** https://portfolio.atas.tech/
+## Latest: OmaSafe (trust & security for Omarchy)
 
-## Key Technologies
-- High-fidelity machine intelligence.
-- Sophisticated architectural patterns for AI agency.
-- Robust secret management protocols.
+- OmaSafe CLI (`omasafe-cli`, Rust, v0.3.1, signed release 2026-09-09, MIT):
+  bounded, evidence-first review of Omarchy plugins (exact revisions, shipped payloads,
+  capabilities, drift from a pinned trust baseline), host posture (encryption, firewall,
+  updates, listeners, kernel/package state, persistence), and pre-install candidates
+  (GitHub URLs, Git revisions, pasted install commands). Never labels a plugin safe or
+  malicious, never executes plugin code, runs unprivileged.
+  https://github.com/tuthan/omasafe · docs: https://tuthan.github.io/omasafe/
+- OmaSafe Omarchy plugin (`io.github.tuthan.omasafe`, v0.5.0): bar widget and review panel
+  over installed plugins and the host; thin QML client over omasafe-cli.
+  https://github.com/tuthan/omasafe-plugin ·
+  https://plugins.omarchy.org/plugin.html?id=io.github.tuthan.omasafe
+- OmaSafe Agent Skill (`omasafe-plugin-review`, v1.4.0): portable Agent Skills package for
+  Claude Code, Codex, Cursor, and OpenCode that reviews plugins through the local CLI.
+  https://github.com/tuthan/omasafe-agent-skill
 
-## Status
-- **Status:** ONLINE
-- **Market:** Cybersecurity, AI Infrastructure, DevOps for LLMs.
+## Omarchy plugins (Quickshell bar widgets, MIT, listed on plugins.omarchy.org)
+
+- Dropdown Terminal (`io.github.tuthan.dropdown-terminal`, v2.3.0): focused floating
+  terminal overlay for Hyprland with bounded entrance effects, interactive pets, and
+  privacy-preserving command-completion indicators.
+  https://github.com/tuthan/omarchy-dropdown-terminal
+- Unraid (`io.github.hvo.omarchy-unraid`, v1.0.1): monitor an Unraid server from the bar
+  over the native GraphQL API — array, disks, parity, CPU/memory, Docker, VMs.
+  https://github.com/tuthan/omarchy-unraid
+- Lunar Calendar (`io.github.tuthan.omarchy-lunar-calendar`, v1.1.0): East Asian lunar
+  calendar, moon phase, Can Chi, 24 solar terms, and activity manager.
+  https://github.com/tuthan/omarchy-lunar-calendar
+
+## Agent security
+
+- BlindPass: zero-knowledge secret provisioning for AI agents (SPS coordinator, HPKE,
+  in-memory-only storage, single-use out-of-band links, gateway anti-phishing).
+  https://blindpass.atas.tech · https://github.com/atas-tech/blindpass
+- BlindDrop: one-time, zero-knowledge secret sharing (client-side AES-256-GCM, key in URL
+  fragment, optional PBKDF2 passphrase, ephemeral Redis TTL).
+  https://blinddrop.atas.tech · https://github.com/atas-tech/blinddrop
+- Dependency Guard: portable dependency-review guardrail for agentic coding workflows
+  (Codex/OpenClaw skill, AGENTS.md, CLAUDE.md, Socket-backed checks, GitHub Actions example).
+  https://clawhub.ai/tuthan/dependency-guard · https://github.com/atas-tech/dependency-guard
+
+## Coming soon
+
+- Kids App: educational iOS application for early cognitive development.
+- Coffee Branch: decentralized coffee supply chain platform.

@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0A0D14">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-1298QHYTGC"></script>
   <script>
@@ -13,206 +15,456 @@
     gtag('config', 'G-1298QHYTGC');
   </script>
 
-  <title>BlindPass — Zero-Knowledge Secrets for AI Agents</title>
-  <meta name="description" content="Forging autonomous protocols and sophisticated AI architectures for the next epoch.">
-  <meta name="keywords" content="AI Agent Security, LLM Secret Management, Zero-Knowledge Encryption, Autonomous Agents, BlindPass, Machine Intelligence, Cybersecurity">
+  <title>ATAS.TECH — Boutique AI Lab · Agent Security &amp; Omarchy Plugins</title>
+  <meta name="description" content="atas.tech builds zero-knowledge secret infrastructure for AI agents (BlindPass, BlindDrop), supply-chain guardrails for agentic coding, and OmaSafe trust tooling plus Quickshell bar plugins for Omarchy Linux.">
+  <meta name="keywords" content="AI Agent Security, Zero-Knowledge Secrets, BlindPass, BlindDrop, OmaSafe, Omarchy Plugins, Quickshell, Hyprland, Dropdown Terminal, Unraid, Dependency Guard, Agent Skills, Singapore AI Lab">
   <link rel="canonical" href="https://atas.tech/">
   <meta name="author" content="Atas Tech">
   <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BlindPass — Zero-Knowledge Secrets for AI Agents">
-  <meta property="og:description" content="Forging autonomous protocols and sophisticated AI architectures for the next epoch.">
+  <meta property="og:title" content="ATAS.TECH — Boutique AI Lab · Agent Security &amp; Omarchy Plugins">
+  <meta property="og:description" content="Zero-knowledge secrets for AI agents, supply-chain guardrails for agentic coding, and OmaSafe trust tooling plus bar plugins for Omarchy Linux.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://atas.tech/">
   <meta property="og:image" content="https://atas.tech/logo.png">
+  <meta property="og:site_name" content="ATAS.TECH">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="BlindPass — Zero-Knowledge Secrets">
-  <meta name="twitter:description" content="Securing the bridge between human intentions and AI agent autonomous execution.">
+  <meta name="twitter:title" content="ATAS.TECH — Boutique AI Lab">
+  <meta name="twitter:description" content="Zero-knowledge secrets for AI agents, supply-chain guardrails, and OmaSafe trust tooling for Omarchy Linux.">
   <meta name="twitter:image" content="https://atas.tech/logo.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=VT323&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Atas Tech",
-    "url": "https://atas.tech",
-    "logo": "https://atas.tech/logo.png",
-    "description": "Forging autonomous protocols and sophisticated AI architectures for the next epoch."
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "BlindPass",
-    "applicationCategory": "SecurityApplication",
-    "operatingSystem": "All",
-    "abstract": "Secure, zero-knowledge secret provisioning platform designed for modern AI/LLM systems.",
-    "url": "https://blindpass.atas.tech"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "ATAS.TECH",
-    "url": "https://atas.tech",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://atas.tech/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://atas.tech/#org",
+        "name": "Atas Tech",
+        "url": "https://atas.tech",
+        "logo": "https://atas.tech/logo.png",
+        "description": "Boutique AI research lab in Singapore building zero-knowledge secret infrastructure for AI agents, supply-chain guardrails for agentic coding, and trust tooling and plugins for Omarchy Linux.",
+        "foundingDate": "2018",
+        "sameAs": ["https://github.com/atas-tech", "https://github.com/tuthan"],
+        "founder": { "@type": "Person", "name": "Hung Vo", "url": "https://portfolio.atas.tech/" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://atas.tech/#website",
+        "name": "ATAS.TECH",
+        "url": "https://atas.tech",
+        "publisher": { "@id": "https://atas.tech/#org" }
+      },
+      {
+        "@type": "ItemList",
+        "name": "Atas Tech projects",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "item": { "@type": "SoftwareApplication", "name": "OmaSafe CLI", "softwareVersion": "0.3.1", "applicationCategory": "SecurityApplication", "operatingSystem": "Linux", "url": "https://github.com/tuthan/omasafe", "license": "https://opensource.org/licenses/MIT", "description": "Bounded, evidence-first review tool for Omarchy plugins, host posture, and pre-install candidates." } },
+          { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareApplication", "name": "Dropdown Terminal", "softwareVersion": "2.3.0", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Linux", "url": "https://github.com/tuthan/omarchy-dropdown-terminal", "license": "https://opensource.org/licenses/MIT", "description": "Omarchy Quickshell plugin that summons the default terminal as a focused floating overlay with effects and pets." } },
+          { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareApplication", "name": "OmaSafe Omarchy plugin", "softwareVersion": "0.5.0", "applicationCategory": "SecurityApplication", "operatingSystem": "Linux", "url": "https://github.com/tuthan/omasafe-plugin", "license": "https://opensource.org/licenses/MIT", "description": "Omarchy bar widget and review panel over installed plugins and host posture, driven by omasafe-cli." } },
+          { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareApplication", "name": "Unraid for Omarchy", "softwareVersion": "1.0.1", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Linux", "url": "https://github.com/tuthan/omarchy-unraid", "license": "https://opensource.org/licenses/MIT", "description": "Monitor an Unraid server from the Omarchy bar over the native GraphQL API." } },
+          { "@type": "ListItem", "position": 5, "item": { "@type": "SoftwareApplication", "name": "Lunar Calendar for Omarchy", "softwareVersion": "1.1.0", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Linux", "url": "https://github.com/tuthan/omarchy-lunar-calendar", "license": "https://opensource.org/licenses/MIT", "description": "East Asian lunar calendar, moon phase, and activity manager for the Omarchy bar." } },
+          { "@type": "ListItem", "position": 6, "item": { "@type": "SoftwareApplication", "name": "BlindPass", "applicationCategory": "SecurityApplication", "operatingSystem": "All", "url": "https://blindpass.atas.tech", "description": "Zero-knowledge secret provisioning for AI agents." } },
+          { "@type": "ListItem", "position": 7, "item": { "@type": "SoftwareApplication", "name": "BlindDrop", "applicationCategory": "SecurityApplication", "operatingSystem": "All", "url": "https://blinddrop.atas.tech", "description": "One-time, zero-knowledge secret sharing with client-side AES-256-GCM encryption." } },
+          { "@type": "ListItem", "position": 8, "item": { "@type": "SoftwareSourceCode", "name": "Dependency Guard", "url": "https://github.com/atas-tech/dependency-guard", "codeRepository": "https://github.com/atas-tech/dependency-guard", "description": "Portable dependency-review guardrail for agentic coding workflows." } },
+          { "@type": "ListItem", "position": 9, "item": { "@type": "SoftwareSourceCode", "name": "OmaSafe Agent Skill", "version": "1.4.0", "url": "https://github.com/tuthan/omasafe-agent-skill", "codeRepository": "https://github.com/tuthan/omasafe-agent-skill", "description": "Portable Agent Skills package for reviewing Omarchy plugins through the local OmaSafe CLI." } }
+        ]
+      }
+    ]
   }
   </script>
 </head>
-<body class="crt-flicker">
+<body>
+  <a class="skip-link" href="#projects">Skip to projects</a>
+
   <!-- Sticky Navigation -->
-  <nav id="navbar">
+  <nav id="navbar" aria-label="Primary">
     <div class="nav-container">
       <a href="#home" class="brand">
-        <img src="logo.png" alt="Atas Logo" class="logo-img">
+        <img src="assets/logo-96.png" width="42" height="42" alt="Atas Tech logo" class="logo-img">
         <span class="brand-text">atas.tech</span>
       </a>
       <div class="nav-links">
-        <a href="#home">[ ./home ]</a>
-        <a href="#projects">[ ./projects ]</a>
-        <a href="https://github.com/atas-tech/" target="_blank">[ ./github ]</a>
+        <a href="#home" data-nav="home">[ ./home ]</a>
+        <a href="#featured" data-nav="featured">[ ./latest ]</a>
+        <a href="#omarchy" data-nav="omarchy">[ ./omarchy ]</a>
+        <a href="#agents" data-nav="agents">[ ./agents ]</a>
+        <a href="https://github.com/atas-tech/" target="_blank" rel="noopener">[ ./github ]</a>
+      </div>
+      <div class="nav-status" aria-hidden="true">
+        <span class="dot"></span>
+        <span id="clock">--:--:--</span>
       </div>
     </div>
   </nav>
 
   <main>
     <!-- Hero Section -->
-    <section id="home" class="hero" data-purpose="hero">
-      <div class="hero-container">
-        <div class="hero-header">
-          <h1 class="typewriter amber-text-glow">> INITIALIZING PROJECT ATAS...</h1>
-        </div>
-        
-        <div class="terminal-box shadow-amber-glow">
-          <div class="terminal-header-line"></div>
-          <div class="terminal-meta">
-            <span>SYS_KERNEL: v2018.0.1</span>
-            <span>LOC: SG_LAB_01</span>
-          </div>
-          <div class="terminal-content">
-            <p class="accent-blue italic">[ DEFINITION_MATCH ]</p>
-            <p class="definition">
-              <span class="accent-amber bold">Atas</span> (adj.) — Derived from Malay, meaning 'upper' or 'above'. In colloquial use: sophisticated, high-end, or high-class.
-            </p>
-            <p class="description-block">
-              Forging autonomous protocols and sophisticated AI architectures for the next epoch.
-            </p>
-            <div class="status-list">
-              <span class="status-ok">[OK]</span> Domain registered 2018<br>
-              <span class="status-ok">[OK]</span> Connection encrypted<br>
-              <span class="status-ok">[OK]</span> Research mode active
+    <section id="home" class="hero">
+      <div class="section-container wide">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">SG_LAB_01 // BOUTIQUE AI RESEARCH · EST. 2018</p>
+            <h1 class="typewriter amber-text-glow">&gt; INITIALIZING PROJECT ATAS...</h1>
+
+            <div class="terminal-box bracket">
+              <div class="terminal-meta">
+                <span>SYS_KERNEL: v2018.0.1</span>
+                <span>LOC: SG_LAB_01</span>
+              </div>
+              <div class="terminal-content">
+                <p class="accent-blue italic">[ DEFINITION_MATCH ]</p>
+                <p class="definition">
+                  <span class="accent-amber bold">Atas</span> (adj.) — Derived from Malay, meaning 'upper' or 'above'. In colloquial use: sophisticated, high-end, or high-class.
+                </p>
+                <p class="description-block">
+                  Forging autonomous protocols, agent-grade security, and sophisticated desktop tooling for the next epoch.
+                </p>
+                <div class="status-list">
+                  <span class="status-ok">[OK]</span> Domain registered 2018<br>
+                  <span class="status-ok">[OK]</span> Connection encrypted<br>
+                  <span class="status-ok">[OK]</span> Trust baseline pinned · omasafe-cli 0.3.1<br>
+                  <span class="status-ok">[OK]</span> Research mode active
+                </div>
+              </div>
             </div>
+
+            <div class="hero-actions">
+              <a href="#featured" class="btn-execute">&gt; VIEW LATEST: OMASAFE</a>
+              <a href="#omarchy" class="btn-ghost">&gt; ls /projects/omarchy-plugins</a>
+            </div>
+          </div>
+
+          <div class="hero-term bracket" id="live-terminal">
+            <div class="term-chrome">
+              <span class="term-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="term-title">atas@sg-lab-01: ~</span>
+              <span class="term-tag">bash</span>
+            </div>
+            <div class="term-body" id="term-out" aria-live="polite">
+              <noscript>
+                <div class="term-line cmd"><span class="prompt">atas@sg-lab-01:~$ </span><span class="text">whoami</span></div>
+                <div class="term-line out">atas.tech — boutique AI research lab · Singapore (SG_LAB_01)</div>
+                <div class="term-line cmd"><span class="prompt">atas@sg-lab-01:~$ </span><span class="text">ls /projects</span></div>
+                <div class="term-line out">omasafe-cli  dropdown-terminal  omasafe-plugin  unraid  lunar-calendar  blindpass  blinddrop  dependency-guard  omasafe-skill  portfolio</div>
+                <div class="term-line cmd"><span class="prompt">atas@sg-lab-01:~$ </span><span class="text">cat /etc/motd</span></div>
+                <div class="term-line out">Know what your system can do. Catch what quietly changed.</div>
+              </noscript>
+            </div>
+            <form class="term-input-row" id="term-form" hidden autocomplete="off">
+              <label for="term-input" class="prompt">atas@sg-lab-01:~$</label>
+              <input id="term-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal input. Type help for commands." placeholder="type 'help'">
+            </form>
           </div>
         </div>
 
-        <div class="backstory-tag">
-          SYS_LOG: Domain registered 2018. Originally allocated for [high.tech]. Repurposed for high-end AI protocols.
+        <div class="stats-bar reveal" aria-label="Lab statistics">
+          <div class="stat"><span class="stat-n" id="stat-active" data-count="10">10</span><span class="stat-l">ACTIVE PROJECTS</span></div>
+          <div class="stat"><span class="stat-n" id="stat-plugins" data-count="4">4</span><span class="stat-l">OMARCHY PLUGINS</span></div>
+          <div class="stat"><span class="stat-n" id="stat-listed" data-count="4">4</span><span class="stat-l">MARKETPLACE LISTED</span></div>
+          <div class="stat"><span class="stat-n">2018</span><span class="stat-l">DOMAIN REGISTERED</span></div>
         </div>
+
+        <p class="backstory-tag">
+          SYS_LOG: Domain registered 2018. Originally allocated for [high.tech]. Repurposed for high-end AI protocols.
+        </p>
+      </div>
+    </section>
+
+    <!-- Featured: OmaSafe CLI -->
+    <section id="featured" class="featured">
+      <div class="section-container wide">
+        <div class="area-head">
+          <h2 class="section-header"><span class="prompt">&gt;</span> cat /projects/latest/omasafe</h2>
+          <p class="dir-meta">-rw-r--r--  signed release v0.3.1 · 2026-09-09 · Rust · MIT · Sigstore-verified installer</p>
+        </div>
+
+        <article class="feature-card bracket reveal" id="omasafe-cli" data-slug="omasafe-cli" data-name="OmaSafe CLI" data-url="https://github.com/tuthan/omasafe" data-status="online">
+          <figure class="feature-media shot">
+            <img src="assets/omasafe-hero.webp" width="1400" height="802" alt="OmaSafe review panel: three alerts to review above the inventory of nine installed Omarchy plugins with trust baseline state and item counts" decoding="async">
+          </figure>
+          <div class="feature-body">
+            <div class="feature-copy">
+            <header class="project-card-header">
+              <div class="title-row">
+                <span class="badge new">NEW</span>
+                <h3 class="project-title">[ PROJECT: OMASAFE CLI ]</h3>
+              </div>
+              <span class="status-badge">[STATUS: ONLINE]</span>
+            </header>
+            <p class="tagline">Know what your system can do. Catch what quietly changed.</p>
+            <p class="project-description">
+              A bounded, evidence-first review engine for Omarchy Linux, written in Rust. It produces versioned reports with identity, evidence, and coverage attached, pins trust baselines for installed plugins, and scans public GitHub candidates before anything touches your shell. It never labels a plugin safe or malicious, never executes plugin code, and runs unprivileged.
+            </p>
+            <ul class="feature-list">
+              <li><b>Plugins</b> — exact revisions, shipped payloads, capabilities, and drift from a pinned trust baseline.</li>
+              <li><b>Host</b> — encryption, firewall, updates, listeners, kernel and package state, persistence. Reported as state, not a score.</li>
+              <li><b>Candidates</b> — GitHub URLs, Git revisions, and pasted install commands scanned before install.</li>
+            </ul>
+            </div>
+            <div class="feature-aside">
+            <dl class="meta-list">
+              <div><dt>Release</dt><dd>v0.3.1 · 2026-09-09 · signed</dd></div>
+              <div><dt>Built with</dt><dd>Rust · 7 crates</dd></div>
+              <div><dt>Verify</dt><dd>Sigstore bundle + SHA-256</dd></div>
+              <div><dt>Runs as</dt><dd>Unprivileged · no plugin code executed</dd></div>
+              <div><dt>License</dt><dd>MIT</dd></div>
+            </dl>
+            <div class="stack-row">
+              <span class="stack-label">STACK:</span>
+              <a class="chip" href="#omasafe-cli">omasafe-cli 0.3.1</a>
+              <a class="chip" href="#omasafe-plugin">bar widget 0.5.0</a>
+              <a class="chip" href="#omasafe-skill">agent skill 1.4.0</a>
+            </div>
+            <footer class="project-card-footer">
+              <a href="https://github.com/tuthan/omasafe" class="btn-execute" target="_blank" rel="noopener">&gt; EXECUTE github.com/tuthan/omasafe</a>
+              <a href="https://github.com/tuthan/omasafe/releases" class="btn-ghost" target="_blank" rel="noopener">releases</a>
+              <a href="https://tuthan.github.io/omasafe/" class="btn-ghost" target="_blank" rel="noopener">docs</a>
+            </footer>
+            </div>
+            <div class="cmdbox feature-cmd">
+              <pre><code>curl --fail --proto '=https' --tlsv1.2 -L https://raw.githubusercontent.com/tuthan/omasafe/v0.3.1/scripts/install-cli.sh -o install-cli.sh
+less install-cli.sh &amp;&amp; bash install-cli.sh --version latest</code></pre>
+              <button type="button" class="copy" data-copy aria-label="Copy install command">[ copy ]</button>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-      <div class="section-container">
-        <div class="project-area">
-          <h2 class="section-header">> ls -la /projects/active</h2>
-          
-          <div class="project-grid">
-            <article class="project-card-outer">
-              <div class="project-card-inner">
+      <div class="section-container wide">
+
+        <!-- Omarchy plugins -->
+        <div class="project-area" id="omarchy">
+          <div class="area-head">
+            <h2 class="section-header"><span class="prompt">&gt;</span> ls -la /projects/omarchy-plugins</h2>
+            <p class="dir-meta">total 4 · Quickshell bar widgets for <a href="https://omarchy.org" target="_blank" rel="noopener">Omarchy</a> · listed on <a href="https://plugins.omarchy.org" target="_blank" rel="noopener">plugins.omarchy.org</a> · MIT</p>
+          </div>
+
+          <div class="project-grid two">
+            <!-- Dropdown Terminal -->
+            <article class="project-card bracket reveal" id="dropdown-terminal" data-slug="dropdown-terminal" data-name="Dropdown Terminal" data-url="https://github.com/tuthan/omarchy-dropdown-terminal" data-status="online">
+              <figure class="shot">
+                <img src="assets/dropdown-terminal.webp" width="960" height="596" alt="Dropdown Terminal overlay on an Omarchy desktop with a pixel cat pet walking along the bar" loading="lazy" decoding="async">
+              </figure>
+              <div class="card-body">
+                <header class="project-card-header">
+                  <h3 class="project-title">[ PLUGIN: DROPDOWN TERMINAL ]</h3>
+                  <span class="status-badge">[ v2.3.0 · LISTED ]</span>
+                </header>
+                <p class="plugin-id">io.github.tuthan.dropdown-terminal</p>
+                <p class="project-description">
+                  Summons your default terminal as a fast, focused floating overlay on the current Hyprland workspace. Bounded entrance effects (glow, fire, firework, thunder, snow, rain), an optional pet world with bond tiers and villain encounters, and opt-in command-completion indicators that record lifecycle metadata only, never command text or output.
+                </p>
+                <ul class="tags"><li>Utilities</li><li>QML</li><li>Hyprland</li><li>Global keybind</li></ul>
+                <div class="cmdbox">
+                  <pre><code>omarchy plugin add https://github.com/tuthan/omarchy-dropdown-terminal.git --enable</code></pre>
+                  <button type="button" class="copy" data-copy aria-label="Copy install command">[ copy ]</button>
+                </div>
+                <footer class="project-card-footer">
+                  <a href="https://github.com/tuthan/omarchy-dropdown-terminal" class="btn-execute" target="_blank" rel="noopener">&gt; EXECUTE github</a>
+                  <a href="https://plugins.omarchy.org/plugin.html?id=io.github.tuthan.dropdown-terminal" class="btn-ghost" target="_blank" rel="noopener">marketplace</a>
+                </footer>
+              </div>
+            </article>
+
+            <!-- OmaSafe plugin -->
+            <article class="project-card bracket reveal" id="omasafe-plugin" data-slug="omasafe-plugin" data-name="OmaSafe bar widget" data-url="https://github.com/tuthan/omasafe-plugin" data-status="online">
+              <figure class="shot">
+                <img src="assets/omasafe-plugins.webp" width="760" height="293" alt="OmaSafe plugin inventory rows with trust baseline state, item counts, and coverage limits" loading="lazy" decoding="async">
+              </figure>
+              <div class="card-body">
+                <header class="project-card-header">
+                  <h3 class="project-title">[ PLUGIN: OMASAFE ]</h3>
+                  <span class="status-badge">[ v0.5.0 · LISTED ]</span>
+                </header>
+                <p class="plugin-id">io.github.tuthan.omasafe</p>
+                <p class="project-description">
+                  Bar widget and five-view review panel over two subjects: the plugins installed on this machine, and the machine itself. Surfaces source drift, detected capabilities, rule coverage, scan alerts, trust baselines, marketplace claims, and host posture, and reviews GitHub candidates before install. A thin QML client over omasafe-cli.
+                </p>
+                <ul class="tags"><li>Security</li><li>QML</li><li>Requires omasafe-cli</li></ul>
+                <div class="cmdbox">
+                  <pre><code>omarchy plugin add https://github.com/tuthan/omasafe-plugin.git --enable</code></pre>
+                  <button type="button" class="copy" data-copy aria-label="Copy install command">[ copy ]</button>
+                </div>
+                <footer class="project-card-footer">
+                  <a href="https://github.com/tuthan/omasafe-plugin" class="btn-execute" target="_blank" rel="noopener">&gt; EXECUTE github</a>
+                  <a href="https://plugins.omarchy.org/plugin.html?id=io.github.tuthan.omasafe" class="btn-ghost" target="_blank" rel="noopener">marketplace</a>
+                </footer>
+              </div>
+            </article>
+
+            <!-- Unraid -->
+            <article class="project-card bracket reveal" id="unraid" data-slug="unraid" data-name="Unraid for Omarchy" data-url="https://github.com/tuthan/omarchy-unraid" data-status="online">
+              <figure class="shot">
+                <img src="assets/unraid.webp" width="429" height="500" alt="Unraid panel showing array started, CPU and memory graphs, uptime, parity status, and disk temperature" loading="lazy" decoding="async">
+              </figure>
+              <div class="card-body">
+                <header class="project-card-header">
+                  <h3 class="project-title">[ PLUGIN: UNRAID ]</h3>
+                  <span class="status-badge">[ v1.0.1 · LISTED ]</span>
+                </header>
+                <p class="plugin-id">io.github.hvo.omarchy-unraid</p>
+                <p class="project-description">
+                  Monitors and manages an Unraid server from the bar over the native Unraid GraphQL API (Unraid 7.2+): array state, disk health and temperatures, parity status, CPU and memory, Docker containers, and VMs. HTTPS with certificate verification by default.
+                </p>
+                <ul class="tags"><li>System</li><li>QML</li><li>GraphQL</li><li>Homelab</li></ul>
+                <div class="cmdbox">
+                  <pre><code>omarchy plugin add https://github.com/tuthan/omarchy-unraid.git --enable</code></pre>
+                  <button type="button" class="copy" data-copy aria-label="Copy install command">[ copy ]</button>
+                </div>
+                <footer class="project-card-footer">
+                  <a href="https://github.com/tuthan/omarchy-unraid" class="btn-execute" target="_blank" rel="noopener">&gt; EXECUTE github</a>
+                  <a href="https://plugins.omarchy.org/plugin.html?id=io.github.hvo.omarchy-unraid" class="btn-ghost" target="_blank" rel="noopener">marketplace</a>
+                </footer>
+              </div>
+            </article>
+
+            <!-- Lunar Calendar -->
+            <article class="project-card bracket reveal" id="lunar-calendar" data-slug="lunar-calendar" data-name="Lunar Calendar for Omarchy" data-url="https://github.com/tuthan/omarchy-lunar-calendar" data-status="online">
+              <figure class="shot">
+                <img src="assets/lunar-calendar.webp" width="900" height="1000" alt="Lunar Calendar panel showing August 2026 with Gregorian and lunar dates, Can Chi labels, and the current moon phase" loading="lazy" decoding="async">
+              </figure>
+              <div class="card-body">
+                <header class="project-card-header">
+                  <h3 class="project-title">[ PLUGIN: LUNAR CALENDAR ]</h3>
+                  <span class="status-badge">[ v1.1.0 · LISTED ]</span>
+                </header>
+                <p class="plugin-id">io.github.tuthan.omarchy-lunar-calendar</p>
+                <p class="project-description">
+                  East Asian lunar calendar (Lịch Âm / 农历) in the bar: a dual Gregorian and lunar grid, moon phase and illumination, Can Chi stem-branch cycles, the 24 solar terms, and an activity manager for recurring lunar dates such as Tết and Rằm.
+                </p>
+                <ul class="tags"><li>Time</li><li>QML</li><li>Astronomy</li></ul>
+                <div class="cmdbox">
+                  <pre><code>omarchy plugin add https://github.com/tuthan/omarchy-lunar-calendar.git --enable</code></pre>
+                  <button type="button" class="copy" data-copy aria-label="Copy install command">[ copy ]</button>
+                </div>
+                <footer class="project-card-footer">
+                  <a href="https://github.com/tuthan/omarchy-lunar-calendar" class="btn-execute" target="_blank" rel="noopener">&gt; EXECUTE github</a>
+                  <a href="https://plugins.omarchy.org/plugin.html?id=io.github.tuthan.omarchy-lunar-calendar" class="btn-ghost" target="_blank" rel="noopener">marketplace</a>
+                </footer>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Agent security -->
+        <div class="project-area" id="agents">
+          <div class="area-head">
+            <h2 class="section-header"><span class="prompt">&gt;</span> ls -la /projects/agent-security</h2>
+            <p class="dir-meta">total 4 · zero-knowledge secrets, supply-chain guardrails, and agent skills for autonomous workflows</p>
+          </div>
+
+          <div class="project-grid two">
+            <!-- BlindPass -->
+            <article class="project-card bracket reveal" id="blindpass" data-slug="blindpass" data-name="BlindPass" data-url="https://blindpass.atas.tech" data-status="online">
+              <div class="card-body">
                 <header class="project-card-header">
                   <h3 class="project-title">[ PROJECT: BLINDPASS ]</h3>
                   <span class="status-badge">[STATUS: ONLINE]</span>
                 </header>
+                <p class="tagline">Zero-knowledge secrets for AI agents.</p>
                 <p class="project-description">
-                  Secure infrastructure and secret management protocols for autonomous AI agents. Ensuring high-grade operational security and robust deployment for agentic workflows.
+                  Humans and agents exchange credentials through a coordinating SPS server using HPKE encryption, in-memory-only storage, single-use out-of-band links, and gateway-level anti-phishing, so plaintext never reaches the LLM or the server.
                 </p>
+                <ul class="tags"><li>HPKE</li><li>Zero-knowledge</li><li>Agent skill</li><li>Gateway</li></ul>
                 <footer class="project-card-footer">
-                  <a href="https://blindpass.atas.tech" class="btn-execute">
-                    > EXECUTE blindpass.atas.tech
-                  </a>
+                  <a href="https://blindpass.atas.tech" class="btn-execute" target="_blank" rel="noopener">&gt; EXECUTE blindpass.atas.tech</a>
+                  <a href="https://github.com/atas-tech/blindpass" class="btn-ghost" target="_blank" rel="noopener">source</a>
                 </footer>
               </div>
             </article>
 
-            <!-- Project Card: BlindDrop -->
-            <article class="project-card-outer">
-              <div class="project-card-inner">
+            <!-- BlindDrop -->
+            <article class="project-card bracket reveal" id="blinddrop" data-slug="blinddrop" data-name="BlindDrop" data-url="https://blinddrop.atas.tech" data-status="online">
+              <div class="card-body">
                 <header class="project-card-header">
                   <h3 class="project-title">[ PROJECT: BLINDDROP ]</h3>
                   <span class="status-badge">[STATUS: ONLINE]</span>
                 </header>
+                <p class="tagline">Share secrets that self-destruct.</p>
                 <p class="project-description">
-                  Share secrets that self-destruct. Forged for high-grade operational security and robust deployment.
+                  One-time secret sharing with a zero-knowledge architecture. AES-256-GCM encryption runs in your browser, the key lives only in the URL fragment, optional PBKDF2 passphrase protection, and drops are permanently deleted after the first view or when the TTL expires.
                 </p>
+                <ul class="tags"><li>AES-256-GCM</li><li>WebCrypto</li><li>Ephemeral</li></ul>
                 <footer class="project-card-footer">
-                  <a href="https://blinddrop.atas.tech" class="btn-execute">
-                    > EXECUTE blinddrop.atas.tech
-                  </a>
+                  <a href="https://blinddrop.atas.tech" class="btn-execute" target="_blank" rel="noopener">&gt; EXECUTE blinddrop.atas.tech</a>
+                  <a href="https://github.com/atas-tech/blinddrop" class="btn-ghost" target="_blank" rel="noopener">source</a>
                 </footer>
               </div>
             </article>
 
-            <!-- Project Card: Portfolio -->
-            <article class="project-card-outer">
-              <div class="project-card-inner">
+            <!-- Dependency Guard -->
+            <article class="project-card bracket reveal" id="dependency-guard" data-slug="dependency-guard" data-name="Dependency Guard" data-url="https://clawhub.ai/tuthan/dependency-guard" data-status="online">
+              <div class="card-body">
                 <header class="project-card-header">
-                  <h3 class="project-title">[ PROJECT: PORTFOLIO ]</h3>
+                  <h3 class="project-title">[ PROJECT: DEPENDENCY GUARD ]</h3>
                   <span class="status-badge">[STATUS: ONLINE]</span>
                 </header>
+                <p class="tagline">Review every dependency before an agent adds it.</p>
                 <p class="project-description">
-                  Documenting a decade of engineering excellence, strategic technical leadership, and contributions to the global AI landscape.
+                  Portable dependency-review guardrail for agentic coding workflows. One policy shipped as a Codex skill, an OpenClaw/ClawHub skill, and AGENTS.md and CLAUDE.md instructions, with Socket-backed supply-chain checks and a copyable GitHub Actions example.
                 </p>
+                <ul class="tags"><li>Supply chain</li><li>Socket</li><li>Agent skill</li><li>CI/CD</li></ul>
                 <footer class="project-card-footer">
-                  <a href="https://portfolio.atas.tech/" class="btn-execute">
-                    > EXECUTE portfolio.atas.tech
-                  </a>
+                  <a href="https://clawhub.ai/tuthan/dependency-guard" class="btn-execute" target="_blank" rel="noopener">&gt; EXECUTE clawhub.ai/dependency-guard</a>
+                  <a href="https://github.com/atas-tech/dependency-guard" class="btn-ghost" target="_blank" rel="noopener">source</a>
                 </footer>
               </div>
             </article>
-   
-             <!-- Project Card: Dependency Guard -->
-             <article class="project-card-outer">
-               <div class="project-card-inner">
-                 <header class="project-card-header">
-                   <h3 class="project-title">[ PROJECT: DEPENDENCY GUARD ]</h3>
-                   <span class="status-badge">[STATUS: ONLINE]</span>
-                 </header>
-                 <p class="project-description">
-                   Portable dependency-review guardrail for agentic coding workflows. Supporting Socket-based supply-chain security across multiple agent platforms and CI/CD pipelines.
-                 </p>
-                 <footer class="project-card-footer">
-                    <a href="https://clawhub.ai/tuthan/dependency-guard" class="btn-execute">
-                      > EXECUTE clawhub.ai/dependency-guard
-                    </a>
-                 </footer>
-               </div>
-             </article>
-           </div>
+
+            <!-- OmaSafe Agent Skill -->
+            <article class="project-card bracket reveal" id="omasafe-skill" data-slug="omasafe-skill" data-name="OmaSafe Agent Skill" data-url="https://github.com/tuthan/omasafe-agent-skill" data-status="online">
+              <div class="card-body">
+                <header class="project-card-header">
+                  <div class="title-row">
+                    <span class="badge new">NEW</span>
+                    <h3 class="project-title">[ SKILL: OMASAFE PLUGIN REVIEW ]</h3>
+                  </div>
+                  <span class="status-badge">[ v1.4.0 ]</span>
+                </header>
+                <p class="tagline">Review what a plugin can do before it touches your shell.</p>
+                <p class="project-description">
+                  Portable Agent Skills package that reviews Omarchy plugins through the local OmaSafe CLI. One canonical skill directory for Claude Code, Codex, Cursor, and OpenCode with an offline installer. Treats every plugin file and report as untrusted evidence and never executes reviewed payloads. Requires omasafe-cli 0.3.0 or newer.
+                </p>
+                <ul class="tags"><li>Agent skill</li><li>Claude Code</li><li>Codex</li><li>Cursor</li><li>OpenCode</li></ul>
+                <div class="cmdbox">
+                  <pre><code>adapters/install.sh --host claude --scope user --symlink</code></pre>
+                  <button type="button" class="copy" data-copy aria-label="Copy install command">[ copy ]</button>
+                </div>
+                <footer class="project-card-footer">
+                  <a href="https://github.com/tuthan/omasafe-agent-skill" class="btn-execute" target="_blank" rel="noopener">&gt; EXECUTE github</a>
+                  <a href="https://github.com/tuthan/omasafe-agent-skill/releases/tag/v1.4.0" class="btn-ghost" target="_blank" rel="noopener">v1.4.0</a>
+                </footer>
+              </div>
+            </article>
+          </div>
         </div>
 
-        <div class="project-area">
-          <h2 class="section-header">> ls -la /projects/coming-soon</h2>
+        <!-- Coming soon -->
+        <div class="project-area" id="coming-soon">
+          <div class="area-head">
+            <h2 class="section-header"><span class="prompt">&gt;</span> ls -la /projects/coming-soon</h2>
+            <p class="dir-meta">total 2 · access pending</p>
+          </div>
 
-          <div class="project-grid">
-            <!-- Project Card: iOS App for Kids -->
-            <article class="project-card-outer">
-              <div class="project-card-inner">
+          <div class="project-grid two">
+            <article class="project-card bracket reveal pending" id="kids-app" data-slug="kids-app" data-name="Kids App" data-status="pending">
+              <div class="card-body">
                 <header class="project-card-header">
                   <h3 class="project-title">[ PROJECT: KIDS APP ]</h3>
                   <span class="status-badge coming-soon">[STATUS: COMING SOON]</span>
@@ -221,16 +473,13 @@
                   Interactive, educational iOS application for early cognitive development. Forged to engage young minds with sophisticated digital interfaces and secure interactions.
                 </p>
                 <footer class="project-card-footer">
-                  <a href="#" class="btn-execute pending" onclick="return false;">
-                    > ACCESS PENDING
-                  </a>
+                  <span class="btn-execute pending" aria-disabled="true">&gt; ACCESS PENDING</span>
                 </footer>
               </div>
             </article>
 
-            <!-- Project Card: Coffee Branch -->
-            <article class="project-card-outer">
-              <div class="project-card-inner">
+            <article class="project-card bracket reveal pending" id="coffee-branch" data-slug="coffee-branch" data-name="Coffee Branch" data-status="pending">
+              <div class="card-body">
                 <header class="project-card-header">
                   <h3 class="project-title">[ PROJECT: COFFEE BRANCH ]</h3>
                   <span class="status-badge coming-soon">[STATUS: COMING SOON]</span>
@@ -239,43 +488,65 @@
                   Building a decentralized coffee supply chain platform. Connecting farmers directly with consumers through transparent, verifiable protocols.
                 </p>
                 <footer class="project-card-footer">
-                  <a href="#" class="btn-execute pending" onclick="return false;">
-                    > ACCESS PENDING
-                  </a>
+                  <span class="btn-execute pending" aria-disabled="true">&gt; ACCESS PENDING</span>
                 </footer>
               </div>
             </article>
           </div>
         </div>
 
-        <div class="project-footer">
-          Total items: 4 active, 2 pending.
+        <div class="project-footer" id="project-totals">
+          Total items: 10 active, 2 pending.
         </div>
       </div>
     </section>
 
+    <!-- Operator -->
+    <section id="operator" class="operator">
+      <div class="section-container wide">
+        <h2 class="section-header"><span class="prompt">&gt;</span> whoami</h2>
+        <article class="operator-card bracket reveal" data-slug="portfolio" data-name="Portfolio" data-url="https://portfolio.atas.tech/" data-status="online">
+          <div class="operator-copy">
+            <p class="operator-name">Hung Vo <span class="dim">// DevSecOps &amp; AI Engineer · Singapore</span></p>
+            <p class="project-description">
+              Operator of atas.tech. Documenting a decade of engineering excellence, strategic technical leadership, and contributions to the global AI landscape.
+            </p>
+          </div>
+          <a href="https://portfolio.atas.tech/" class="btn-execute" target="_blank" rel="noopener">&gt; EXECUTE portfolio.atas.tech</a>
+        </article>
+      </div>
+    </section>
+
     <!-- GitHub Section -->
-    <section class="github-section circuit-bg">
+    <section id="github" class="github-section circuit-bg">
       <div class="section-container text-center">
-        <h2 class="typewriter">> ACCESS OPEN SOURCE REPOSITORIES</h2>
+        <h2 class="typewriter">&gt; ACCESS OPEN SOURCE REPOSITORIES</h2>
         <p class="github-text">
-          Review the source code, development operations, and infrastructure components powering the Atas ecosystem.
+          Review the source code, development operations, and infrastructure components powering the Atas ecosystem. Lab projects live under atas-tech; OmaSafe and the Omarchy plugins live under tuthan.
         </p>
-        <a href="https://github.com/atas-tech/" target="_blank" class="btn-primary">
-          CONNECT TO GITHUB ->
-        </a>
+        <div class="cta-row">
+          <a href="https://github.com/atas-tech/" target="_blank" rel="noopener" class="btn-primary">CONNECT TO github.com/atas-tech -&gt;</a>
+          <a href="https://github.com/tuthan?tab=repositories&amp;q=omarchy+omasafe" target="_blank" rel="noopener" class="btn-primary alt">github.com/tuthan -&gt;</a>
+        </div>
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="site-footer">
     <div class="footer-container">
       <p>CONNECTION SECURE.</p>
       <p>© 2018 - PRESENT // ATAS.TECH<span class="blink-cursor">_</span></p>
+      <p class="footer-links">
+        <a href="https://blindpass.atas.tech" target="_blank" rel="noopener">blindpass</a> ·
+        <a href="https://blinddrop.atas.tech" target="_blank" rel="noopener">blinddrop</a> ·
+        <a href="https://github.com/tuthan/omasafe" target="_blank" rel="noopener">omasafe</a> ·
+        <a href="https://portfolio.atas.tech/" target="_blank" rel="noopener">portfolio</a> ·
+        <a href="llms.txt">llms.txt</a>
+      </p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

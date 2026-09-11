@@ -6,17 +6,35 @@ Sophisticated architectural patterns and high-fidelity machine intelligence.
 
 ATAS (adj.) – Derived from Malay, meaning 'upper' or 'above'. In colloquial use: sophisticated, high-end, or high-class.
 
-atas.tech is a boutique AI research laboratory focusing on sophisticated architectural patterns and high-fidelity machine intelligence.
+atas.tech is a boutique AI research laboratory in Singapore. It is the hub for zero-knowledge secret infrastructure for AI agents, supply-chain guardrails for agentic coding, and trust tooling plus Quickshell bar plugins for Omarchy Linux.
 
 ## Project Est. 2018
 
 Originally allocated for high-end AI protocols, atas.tech serves as the hub for advanced research and development.
 
-### Active Projects
+### Latest: OmaSafe
 
-- **[PROJECT: BLINDPASS]**: Multi-agent orchestration and secure coordinator system.
-  - [Status: ONLINE]
-  - [Access: [blindpass.atas.tech](https://blindpass.atas.tech)]
+- **OmaSafe CLI** (Rust, v0.3.1) — bounded, evidence-first review of Omarchy plugins, host posture, and pre-install candidates. [github.com/tuthan/omasafe](https://github.com/tuthan/omasafe)
+- **OmaSafe plugin** (v0.5.0) — Omarchy bar widget and review panel over the CLI. [github.com/tuthan/omasafe-plugin](https://github.com/tuthan/omasafe-plugin)
+- **OmaSafe Agent Skill** (v1.4.0) — portable skill for Claude Code, Codex, Cursor, and OpenCode. [github.com/tuthan/omasafe-agent-skill](https://github.com/tuthan/omasafe-agent-skill)
+
+### Omarchy plugins
+
+- **Dropdown Terminal** (v2.3.0) — [github.com/tuthan/omarchy-dropdown-terminal](https://github.com/tuthan/omarchy-dropdown-terminal)
+- **OmaSafe** (v0.5.0) — [github.com/tuthan/omasafe-plugin](https://github.com/tuthan/omasafe-plugin)
+- **Unraid** (v1.0.1) — [github.com/tuthan/omarchy-unraid](https://github.com/tuthan/omarchy-unraid)
+- **Lunar Calendar** (v1.1.0) — [github.com/tuthan/omarchy-lunar-calendar](https://github.com/tuthan/omarchy-lunar-calendar)
+
+### Agent security
+
+- **BlindPass** — zero-knowledge secrets for AI agents. [blindpass.atas.tech](https://blindpass.atas.tech)
+- **BlindDrop** — one-time, self-destructing secret sharing. [blinddrop.atas.tech](https://blinddrop.atas.tech)
+- **Dependency Guard** — dependency-review guardrail for agentic coding. [clawhub.ai/tuthan/dependency-guard](https://clawhub.ai/tuthan/dependency-guard)
+
+### Coming soon
+
+- **Kids App** — educational iOS app for early cognitive development.
+- **Coffee Branch** — decentralized coffee supply chain platform.
 
 ## Local Development
 
@@ -26,13 +44,17 @@ To view the landing page locally:
    ```bash
    git clone git@github.com:atas-tech/atas.tech.git
    ```
-2. Open `index.html` in your browser.
+2. Open `index.html` in your browser (or serve the folder with `python3 -m http.server`).
+
+Project cards carry `data-slug`, `data-name`, `data-url`, and `data-status` attributes. The hero terminal, the stats bar, and the totals line read those attributes at runtime, so adding a card is enough to keep them in sync.
+
+Thumbnails live in `assets/` as WebP; regenerate them from the source repositories with ImageMagick (`magick preview.png -resize 960x -quality 80 assets/<name>.webp`).
 
 ## Tech Stack
 
-- **HTML5**: Semantic structure.
-- **Vanilla CSS**: Retro-terminal aesthetic with CRT flicker and scanline effects.
-- **JavaScript**: Minimal terminal-style interactivity.
+- **HTML5**: Semantic structure with JSON-LD for the organization and project list.
+- **Vanilla CSS**: Retro-terminal aesthetic with CRT scanlines, vignette, and phosphor-tinted screenshots.
+- **JavaScript**: Boot sequence, live scripted terminal with a small command set, reveal-on-scroll, copyable install commands. No dependencies.
 - **GitHub Actions**: Automated deployment to GitHub Pages.
 
 ---

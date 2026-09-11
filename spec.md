@@ -61,3 +61,42 @@ Input these core design tokens into your CSS or UI generator to establish the re
 - **Content:** * `CONNECTION SECURE.`
   - `© 2018 - PRESENT // ATAS.TECH`
   - Blinking cursor `_` at the very bottom.
+
+------
+
+## 3. Revision — 2026-09-10 layout
+
+The single-column brief above described the first build. The site now uses a wider,
+showcase-oriented structure. Design tokens, palette, and the retro-terminal language are
+unchanged; secondary body copy moved off pure amber onto `--dim` (`#8DA0B5`) for contrast.
+
+### Page order
+
+1. **Hero (two columns, 1100px)** — left: eyebrow, typewriter headline, definition terminal box,
+   two calls to action. Right: a live terminal that types a scripted `whoami` / `ls /projects` /
+   `omarchy plugin list` / `cat /etc/motd` session, then accepts input
+   (`help`, `ls`, `cat <project>`, `open <project>`, `plugins`, `whoami`, `uptime`, `date`,
+   `pwd`, `clear`, `neofetch`, arrow-key history, Ctrl+L). Below both: a four-cell stats bar
+   that counts up on reveal, then the SYS_LOG backstory line.
+2. **`> cat /projects/latest/omasafe`** — one featured card: a full-width panel screenshot
+   banner, then a two-column body (copy and review surfaces on the left; release metadata,
+   stack chips, and actions on the right) with the verified install command spanning both.
+3. **`> ls -la /projects/omarchy-plugins`** — two-column grid of four plugin cards, each with a
+   16:9 screenshot, plugin ID, tags, a copyable `omarchy plugin add` command, and marketplace link.
+4. **`> ls -la /projects/agent-security`** — two-column grid of four cards (BlindPass, BlindDrop,
+   Dependency Guard, OmaSafe Agent Skill).
+5. **`> ls -la /projects/coming-soon`** — dashed-border pending cards.
+6. **`> whoami`** — operator strip linking to the portfolio.
+7. **GitHub banner** with both organizations, then the footer.
+
+### Component rules added
+
+- **Corner brackets** (`.bracket`) on panels and cards; they grow from 14px to 26px on hover.
+- **Screenshots** (`.shot`) are phosphor-tinted at rest (`sepia`/`hue-rotate`) with a scanline
+  overlay, and resolve to full colour on hover.
+- **Copy buttons** (`.cmdbox` + `[data-copy]`) copy install commands with a clipboard fallback.
+- **Boot overlay** plays a short BIOS sequence once per session; any key or click skips it.
+- Project cards carry `data-slug`, `data-name`, `data-url`, and `data-status`. The terminal,
+  the stats bar, and the totals line derive their content from those attributes, so adding a
+  card keeps everything in sync.
+- `prefers-reduced-motion` disables the boot sequence, typewriter, reveals, and count-ups.
