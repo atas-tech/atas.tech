@@ -1,8 +1,9 @@
 # ATAS.TECH — Boutique AI Research Lab (Singapore, est. 2018)
 
-atas.tech is the hub for Atas Tech's projects: zero-knowledge secret infrastructure for
-AI agents, supply-chain guardrails for agentic coding, and trust tooling plus Quickshell
-bar plugins for Omarchy Linux. Operator: Hung Vo (DevSecOps & AI Engineer).
+atas.tech is the hub for Atas Tech's projects: encrypted secret handoff for AI agents,
+supply-chain guardrails for agentic coding, trust tooling plus Quickshell bar plugins for
+Omarchy Linux, and device companions for SteamOS and herdr. Operator: Hung Vo (AI Security
+Engineer).
 
 - Site: https://atas.tech
 - GitHub (lab): https://github.com/atas-tech
@@ -11,19 +12,20 @@ bar plugins for Omarchy Linux. Operator: Hung Vo (DevSecOps & AI Engineer).
 
 ## Latest: OmaSafe (trust & security for Omarchy)
 
-- OmaSafe CLI (`omasafe-cli`, Rust, v0.3.1, signed release 2026-09-09, MIT):
+- OmaSafe CLI (`omasafe-cli`, Rust, v0.3.3, signed release 2026-09-14, MIT):
   bounded, evidence-first review of Omarchy plugins (exact revisions, shipped payloads,
   capabilities, drift from a pinned trust baseline), host posture (encryption, firewall,
   updates, listeners, kernel/package state, persistence), and pre-install candidates
   (GitHub URLs, Git revisions, pasted install commands). Never labels a plugin safe or
   malicious, never executes plugin code, runs unprivileged.
   https://github.com/tuthan/omasafe · docs: https://tuthan.github.io/omasafe/
-- OmaSafe Omarchy plugin (`io.github.tuthan.omasafe`, v0.5.0): bar widget and review panel
+- OmaSafe Omarchy plugin (`io.github.tuthan.omasafe`, v0.5.1): bar widget and review panel
   over installed plugins and the host; thin QML client over omasafe-cli.
   https://github.com/tuthan/omasafe-plugin ·
   https://plugins.omarchy.org/plugin.html?id=io.github.tuthan.omasafe
-- OmaSafe Agent Skill (`omasafe-plugin-review`, v1.4.0): portable Agent Skills package for
-  Claude Code, Codex, Cursor, and OpenCode that reviews plugins through the local CLI.
+- OmaSafe Agent Skill (`omasafe-plugin-review`, v1.4.1): portable Agent Skills package for
+  Claude Code, Codex, Cursor, and OpenCode that reviews plugins through the local CLI
+  (requires omasafe-cli 0.3.2 or newer).
   https://github.com/tuthan/omasafe-agent-skill
 
 ## Omarchy plugins (Quickshell bar widgets, MIT, listed on plugins.omarchy.org)
@@ -41,8 +43,11 @@ bar plugins for Omarchy Linux. Operator: Hung Vo (DevSecOps & AI Engineer).
 
 ## Agent security
 
-- BlindPass: zero-knowledge secret provisioning for AI agents (SPS coordinator, HPKE,
-  in-memory-only storage, single-use out-of-band links, gateway anti-phishing).
+- BlindPass: self-hosted encrypted credential handoff for AI agents. The operator's browser
+  encrypts with HPKE (X25519, HKDF-SHA256, ChaCha20-Poly1305); a Rust controller (SQLite or
+  PostgreSQL) coordinates ciphertext with signed input links, one-use retrieval, and
+  policy-controlled agent-to-agent exchange (approvals, audit). Operator console and CLI;
+  native, Docker Compose, or Unraid deployment. The hosted SPS service has been retired.
   https://blindpass.atas.tech · https://github.com/atas-tech/blindpass
 - BlindDrop: one-time, zero-knowledge secret sharing (client-side AES-256-GCM, key in URL
   fragment, optional PBKDF2 passphrase, ephemeral Redis TTL).
@@ -50,6 +55,23 @@ bar plugins for Omarchy Linux. Operator: Hung Vo (DevSecOps & AI Engineer).
 - Dependency Guard: portable dependency-review guardrail for agentic coding workflows
   (Codex/OpenClaw skill, AGENTS.md, CLAUDE.md, Socket-backed checks, GitHub Actions example).
   https://clawhub.ai/tuthan/dependency-guard · https://github.com/atas-tech/dependency-guard
+
+## Companions (one device controlling or answering another)
+
+- SteamOS Companion (Decky plugin v0.5.18, Omarchy client v0.5.14 listed as
+  `io.github.tuthan.steamoscompanion`, MIT): control and monitor one SteamOS device from
+  another over the local network. Wake, power actions behind confirmation, display-mode
+  preview with timed revert, Gaming Mode display order, optional Sunshine monitoring, per-client
+  scoped access. Pinned certificates; pairing by a comparison code that never crosses the
+  network. Android client in development.
+  https://steamos-companion.atas.tech · https://github.com/tuthan/steamos-companion-decky ·
+  https://github.com/tuthan/steamos-companion-omarchy
+- Paddock for herdr (host plugin v0.2.0, Apache-2.0): independent Android companion that
+  alerts you when a coding agent in a herdr session is waiting and lets you answer over SSH,
+  with no cloud in between. The Android app is in testing and not yet published; not
+  affiliated with herdr.
+  https://tuthan.github.io/herdr-plugin-paddock/ · https://github.com/tuthan/herdr-plugin-paddock ·
+  https://github.com/tuthan/paddock-android
 
 ## Coming soon
 

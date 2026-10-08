@@ -19,13 +19,14 @@
   const byslug = (s) => projects.find((p) => p.slug === s);
   const online = projects.filter((p) => p.status === 'online').length;
   const pending = projects.filter((p) => p.status === 'pending').length;
-  const omarchyPlugins = $$('#omarchy [data-slug]').length;
+  const omarchyPlugins = $$('[data-omarchy]').length;
+  const listedPlugins = $$('[data-omarchy="listed"]').length;
 
   /* ---------------- Stats + totals kept in sync with the cards ---------------- */
   const setStat = (id, n) => { const el = $(id); if (el) { el.dataset.count = String(n); el.textContent = String(n); } };
   setStat('#stat-active', online);
   setStat('#stat-plugins', omarchyPlugins);
-  setStat('#stat-listed', omarchyPlugins);
+  setStat('#stat-listed', listedPlugins);
   const totals = $('#project-totals');
   if (totals) totals.textContent = `Total items: ${online} active, ${pending} pending.`;
 
@@ -86,7 +87,7 @@
         ['amber', 'ATAS BIOS v2018.0.1 — SG_LAB_01'],
         ['', '[ OK ] Phosphor warm-up'],
         ['', `[ OK ] Mounting /projects (${online} entries)`],
-        ['', '[ OK ] Trust baseline pinned · omasafe-cli 0.3.1'],
+        ['', '[ OK ] Trust baseline pinned · omasafe-cli 0.3.3'],
         ['', `[ OK ] Loading omarchy plugins ×${omarchyPlugins}`],
         ['', '[ OK ] Connection encrypted'],
         ['amber', '> Starting atas.tech_'],
@@ -211,9 +212,10 @@
 
   const pluginRows = [
     'io.github.tuthan.dropdown-terminal       2.3.0   enabled',
-    'io.github.tuthan.omasafe                 0.5.0   enabled',
+    'io.github.tuthan.omasafe                 0.5.1   enabled',
     'io.github.hvo.omarchy-unraid             1.0.1   enabled',
     'io.github.tuthan.omarchy-lunar-calendar  1.1.0   enabled',
+    'io.github.tuthan.steamoscompanion        0.5.14  enabled',
   ];
 
   const commands = {
@@ -260,7 +262,7 @@
       ' / /\\ \\/  \\  OS: atas.tech (est. 2018)',
       '/_/  \\/____\\ Shell: bash · Theme: amber phosphor',
       `             Projects: ${online} online · ${pending} pending`,
-      `             Plugins: ${omarchyPlugins} listed on plugins.omarchy.org`,
+      `             Plugins: ${listedPlugins} listed on plugins.omarchy.org`,
     ], 'ok'),
   };
   commands.atasfetch = commands.neofetch;

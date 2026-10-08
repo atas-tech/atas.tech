@@ -100,3 +100,16 @@ unchanged; secondary body copy moved off pure amber onto `--dim` (`#8DA0B5`) for
   the stats bar, and the totals line derive their content from those attributes, so adding a
   card keeps everything in sync.
 - `prefers-reduced-motion` disables the boot sequence, typewriter, reveals, and count-ups.
+
+## 4. Revision — 2026-10-08
+
+- **New area `> ls -la /projects/companions`** between agent-security and coming-soon: two
+  cards, SteamOS Companion (screenshot, Omarchy install command, marketplace link) and Paddock
+  (no screenshot; its design boards are concept mock-ups, so they are not used as product
+  imagery). Nav gains `[ ./companions ]`.
+- **Omarchy plugin counts** now come from `data-omarchy="listed"` on the card rather than from
+  the `#omarchy` container, because SteamOS Companion's Omarchy client is a marketplace plugin
+  that lives in the companions area. The plugins stat and the marketplace-listed stat both read it.
+- **BlindPass card** describes the self-hosted Rust controller and drops the `ONLINE` status:
+  the hosted SPS stack was retired on 2026-10-07 and only the landing page remains live.
+- Versions refreshed: omasafe-cli 0.3.3, OmaSafe plugin 0.5.1, OmaSafe agent skill 1.4.1.
